@@ -2,6 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import PixelGame from "@/components/PixelGame";
 
 const projects = [
   {
@@ -84,6 +85,20 @@ export default function Home() {
           <p className="text-[16px] font-normal text-black leading-normal">
             {"I'm also a sheep and alpaca lover :D"}
           </p>
+        </div>
+      </section>
+
+      {/* Pixel Game */}
+      <section className="px-12 pb-[60px]">
+        <div className="relative w-full rounded-xl overflow-hidden" style={{ aspectRatio: '1344/600' }}>
+          <PixelGame theme="pastel" />
+        </div>
+        <div className="mt-4 flex justify-center gap-2 flex-wrap font-mono text-xs text-[#666]">
+          <span>Click the game then press</span>
+          <span className="bg-white border border-[#d1d1d1] px-2 py-1 rounded font-bold shadow-[0_1px_0_#d1d1d1]">SPACE</span>
+          <span>or</span>
+          <span className="bg-white border border-[#d1d1d1] px-2 py-1 rounded font-bold shadow-[0_1px_0_#d1d1d1]">↑</span>
+          <span>to jump · double-tap for double-jump</span>
         </div>
       </section>
 
