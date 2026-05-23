@@ -1,65 +1,125 @@
 import Image from "next/image";
+import Link from "next/link";
+import Navbar from "@/components/Navbar";
+import Footer from "@/components/Footer";
+
+const projects = [
+  {
+    id: "cloudcast",
+    date: "2023 July - 2023 December / Senior Designer",
+    title: "Designing an Immersive Video Learning Experience for Engineers",
+    description:
+      "Designed and launched the full MVP for beta testing with in house 1k+ developers, helping secure funding through design concepts and product vision.",
+    image: "/images/cloudcast.png",
+    imageAlt: "CloudCast TV learning experience",
+    href: "/cloudcast",
+    aspectRatio: "aspect-[4008/2200]",
+  },
+  {
+    id: "cppib",
+    date: "2024 July - 2024 November / Lead Designer",
+    title: "Designing Scenario Builder for Investment Performance Managers",
+    description:
+      "Led end-to-end design of an enterprise platform, streamlining complex financial workflows and cutting weekly operational hours by 50%.",
+    image: "/images/cppib.png",
+    imageAlt: "Scenario Builder for Investment Performance Managers",
+    href: "/greenwealth",
+    aspectRatio: "aspect-[4096/2665]",
+  },
+  {
+    id: "puffin",
+    date: "2021 January - 2023 December / Product Designer",
+    title: "Making Trip Planning Experience More Exciting",
+    description:
+      "Built a collaborative trip-planning tool built with three designers and two engineers. Featured on Product Hunt in 2022.",
+    image: "/images/puffin.png",
+    imageAlt: "Puffin trip planning app",
+    href: "/puffin",
+    aspectRatio: "aspect-[4008/1956]",
+  },
+  {
+    id: "slalom-community",
+    date: "2023 January - 2023 June / Life at Slalom",
+    title: "Building a Co-Learning Community for Designers at Slalom Build",
+    description:
+      "Led a design study group at Slalom that grew from 8 to 30+ participants, fostering a strong culture of continuous learning and community.",
+    image: "/images/slalom-community.png",
+    imageAlt: "Slalom design community Slack post",
+    href: "/slalom",
+    aspectRatio: "aspect-[4008/1852]",
+  },
+];
 
 export default function Home() {
   return (
-    <div className="flex flex-col flex-1 items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex flex-1 w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            To get started, edit the page.tsx file.
-          </h1>
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Learning
-            </a>{" "}
-            center.
+    <main className="min-h-screen bg-[#fcfcfc]">
+      <Navbar />
+
+      {/* Hero */}
+      <section className="px-12 pt-[180px] pb-[60px]">
+        <div className="flex flex-col gap-[11px] max-w-[900px]">
+          <div className="relative w-[481px] h-[103px]">
+            <Image
+              src="/images/chelsea-name.png"
+              alt="Chelsea"
+              fill
+              className="object-contain object-left"
+              priority
+            />
+          </div>
+          <p className="text-[40px] font-normal text-black leading-normal">
+            {"I'm a Senior Product Designer at Slalom Build, bringing ideas to life from 0 to 1 for clients. Previously designed fintech products at Questrade and Sensibill."}
+          </p>
+          <p className="text-[16px] font-normal text-black leading-normal">
+            {"I'm also a sheep and alpaca lover :D"}
           </p>
         </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
-          <a
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
+      </section>
+
+      {/* Projects */}
+      {projects.map((project) => (
+        <section
+          key={project.id}
+          className="flex flex-col gap-8 px-12 py-[60px]"
+        >
+          <div className="flex flex-col gap-4 max-w-[900px]">
+            <p className="text-[18px] font-normal text-[#a1a1a1] leading-[28px]">
+              {project.date}
+            </p>
+            <div className="flex flex-col gap-1">
+              <Link
+                href={project.href}
+                className="text-[24px] font-normal text-black leading-[28px] hover:underline"
+              >
+                {project.title}
+              </Link>
+              <p className="text-[18px] font-normal text-black leading-[28px]">
+                {project.description}
+              </p>
+              <Link
+                href={project.href}
+                className="mt-1 text-[18px] font-semibold text-black underline leading-[28px] hover:opacity-70 transition-opacity w-fit"
+              >
+                See Detail
+              </Link>
+            </div>
+          </div>
+
+          <div
+            className={`relative w-full max-w-[1100px] ${project.aspectRatio}`}
           >
             <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={16}
+              src={project.image}
+              alt={project.imageAlt}
+              fill
+              className="object-cover rounded-sm"
+              sizes="(max-width: 768px) 100vw, 1100px"
             />
-            Deploy Now
-          </a>
-          <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
-        </div>
-      </main>
-    </div>
+          </div>
+        </section>
+      ))}
+
+      <Footer />
+    </main>
   );
 }
