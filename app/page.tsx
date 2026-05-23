@@ -5,6 +5,17 @@ import Footer from "@/components/Footer";
 
 const projects = [
   {
+    id: "turbotax",
+    date: "Add date / Add role",
+    title: "Add your TurboTax Intuit project title here",
+    description:
+      "Add a short description of what you worked on and the impact it had.",
+    image: "/images/cloudcast.png",
+    imageAlt: "TurboTax Intuit project",
+    href: "/turbotax",
+    aspectRatio: "aspect-[4008/2200]",
+  },
+  {
     id: "cloudcast",
     date: "2023 July - 2023 December / Senior Designer",
     title: "Designing an Immersive Video Learning Experience for Engineers",
