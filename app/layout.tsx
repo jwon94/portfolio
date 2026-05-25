@@ -1,10 +1,17 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Inter, Abril_Fatface } from "next/font/google";
 import "./globals.css";
 
 const inter = Inter({
   subsets: ["latin"],
   variable: "--font-inter",
+  display: "swap",
+});
+
+const abrilFatface = Abril_Fatface({
+  weight: "400",
+  subsets: ["latin"],
+  variable: "--font-abril",
   display: "swap",
 });
 
@@ -20,7 +27,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={`${inter.variable} antialiased`}>
+    <html lang="en" className={`${inter.variable} ${abrilFatface.variable} antialiased`}>
       <body className="min-h-screen bg-[#fcfcfc] font-sans">{children}</body>
     </html>
   );

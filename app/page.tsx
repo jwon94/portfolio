@@ -70,15 +70,9 @@ export default function Home() {
       {/* Hero */}
       <section className="px-12 pt-[180px] pb-[60px]">
         <div className="flex flex-col gap-[11px] max-w-[900px]">
-          <div className="relative w-[481px] h-[103px]">
-            <Image
-              src="/images/chelsea-name.png"
-              alt="Chelsea"
-              fill
-              className="object-contain object-left"
-              priority
-            />
-          </div>
+          <h1 className="text-[96px] leading-none font-[family-name:var(--font-abril)] text-black">
+            Chelsea
+          </h1>
           <p className="text-[40px] font-normal text-black leading-normal">
             {"I'm a Senior Product Designer at Slalom Build, bringing ideas to life from 0 to 1 for clients. Previously designed fintech products at Questrade and Sensibill."}
           </p>
