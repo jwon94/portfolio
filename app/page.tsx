@@ -91,14 +91,16 @@ export default function Home() {
       {/* Pixel Game */}
       <section className="px-12 pb-[60px]">
         <div className="relative w-full rounded-xl overflow-hidden" style={{ aspectRatio: '1344/600' }}>
-          <PixelGame theme="pastel" />
+          <PixelGame theme="toronto" />
         </div>
         <div className="mt-4 flex justify-center gap-2 flex-wrap font-mono text-xs text-[#666]">
-          <span>Click the game then press</span>
-          <span className="bg-white border border-[#d1d1d1] px-2 py-1 rounded font-bold shadow-[0_1px_0_#d1d1d1]">SPACE</span>
-          <span>or</span>
+          <span>Click the game then use</span>
+          <span className="bg-white border border-[#d1d1d1] px-2 py-1 rounded font-bold shadow-[0_1px_0_#d1d1d1]">← →</span>
+          <span>to walk ·</span>
           <span className="bg-white border border-[#d1d1d1] px-2 py-1 rounded font-bold shadow-[0_1px_0_#d1d1d1]">↑</span>
-          <span>to jump · double-tap for double-jump</span>
+          <span>or</span>
+          <span className="bg-white border border-[#d1d1d1] px-2 py-1 rounded font-bold shadow-[0_1px_0_#d1d1d1]">SPACE</span>
+          <span>to jump</span>
         </div>
       </section>
 
