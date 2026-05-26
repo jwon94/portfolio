@@ -6,17 +6,6 @@ import PixelGame from "@/components/PixelGame";
 
 const projects = [
   {
-    id: "turbotax",
-    date: "Add date / Add role",
-    title: "Add your TurboTax Intuit project title here",
-    description:
-      "Add a short description of what you worked on and the impact it had.",
-    image: "/images/cloudcast.png",
-    imageAlt: "TurboTax Intuit project",
-    href: "/turbotax",
-    aspectRatio: "aspect-[4008/2200]",
-  },
-  {
     id: "cloudcast",
     date: "2023 July - 2023 December / Senior Designer",
     title: "Designing an Immersive Video Learning Experience for Engineers",
@@ -68,26 +57,23 @@ export default function Home() {
       <Navbar />
 
       {/* Hero */}
-      <section className="px-12 pt-[180px] pb-[60px]">
+      <section className="px-12 pt-[180px] pb-8">
         <div className="flex flex-col gap-[11px] max-w-[900px]">
-          <h1 className="text-[96px] leading-none font-[family-name:var(--font-abril)] text-black">
-            Chelsea
-          </h1>
           <p className="text-[40px] font-normal text-black leading-normal">
-            {"I'm a Senior Product Designer at Slalom Build, bringing ideas to life from 0 to 1 for clients. Previously designed fintech products at Questrade and Sensibill."}
+            {"Hello, I'm Chelsea, a Senior Product Designer built across fintech, startups and consulting."}
           </p>
-          <p className="text-[16px] font-normal text-black leading-normal">
-            {"I'm also a sheep and alpaca lover :D"}
+          <p className="text-[24px] font-normal text-black leading-normal" style={{ fontFamily: 'Inter, sans-serif' }}>
+            {"Previously at Intuit TurboTax, Slalom Build, Questrade & Sensibill."}
           </p>
         </div>
       </section>
 
       {/* Pixel Game */}
       <section className="px-12 pb-[60px]">
-        <div className="relative w-full rounded-xl overflow-hidden" style={{ aspectRatio: '1344/600' }}>
+        <div className="relative w-full max-w-[1100px] rounded-xl overflow-hidden" style={{ aspectRatio: '1344/600' }}>
           <PixelGame theme="toronto" />
         </div>
-        <div className="mt-4 flex justify-center gap-2 flex-wrap font-mono text-xs text-[#666]">
+        <div className="mt-4 w-full max-w-[1100px] flex items-center gap-2 flex-wrap font-mono text-xs text-[#666]">
           <span>Click the game then use</span>
           <span className="bg-white border border-[#d1d1d1] px-2 py-1 rounded font-bold shadow-[0_1px_0_#d1d1d1]">← →</span>
           <span>to walk ·</span>
@@ -99,6 +85,7 @@ export default function Home() {
       </section>
 
       {/* Projects */}
+      <div id="projects" className="scroll-mt-24" />
       {projects.map((project) => (
         <section
           key={project.id}
@@ -127,8 +114,9 @@ export default function Home() {
             </div>
           </div>
 
-          <div
-            className={`relative w-full max-w-[1100px] ${project.aspectRatio}`}
+          <Link
+            href={project.href}
+            className={`relative block w-full max-w-[1100px] ${project.aspectRatio} hover:opacity-90 transition-opacity`}
           >
             <Image
               src={project.image}
@@ -137,7 +125,7 @@ export default function Home() {
               className="object-cover rounded-sm"
               sizes="(max-width: 768px) 100vw, 1100px"
             />
-          </div>
+          </Link>
         </section>
       ))}
 

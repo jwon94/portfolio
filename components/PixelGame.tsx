@@ -456,9 +456,11 @@ export default function PixelGame({ theme = 'toronto' }: PixelGameProps) {
   useEffect(() => {
     const canvas = canvasRef.current;
     if (!canvas) return;
-    canvas.width = VW; canvas.height = VH;
+    const dpr = Math.min(window.devicePixelRatio || 1, 2);
+    canvas.width = VW * dpr; canvas.height = VH * dpr;
     const ctx = canvas.getContext('2d')!;
     ctx.imageSmoothingEnabled = false;
+    ctx.scale(dpr, dpr);
     let raf: number;
     let last = performance.now();
     let acc = 0;
@@ -747,8 +749,8 @@ export default function PixelGame({ theme = 'toronto' }: PixelGameProps) {
             <span className={styles.val}>{String(hud.score).padStart(5, '0')}</span>
           </div>
           <div className={`${styles.col} ${styles.hearts}`} style={{ marginLeft: 'auto', alignItems: 'flex-end' }}>
-            <span className={styles.lbl} style={{ display: 'flex', alignItems: 'center', gap: 6 }}>
-              <svg width="14" height="13" viewBox="0 0 12 11" aria-hidden="true">
+            <span className={styles.val} style={{ display: 'flex', alignItems: 'center', gap: 8 }}>
+              <svg width="20" height="18" viewBox="0 0 12 11" aria-hidden="true">
                 <path d="M1 3.5C1 2.1 2.1 1 3.5 1c1 0 1.9.6 2.5 1.5C6.6 1.6 7.5 1 8.5 1 9.9 1 11 2.1 11 3.5c0 3.5-5 6.5-5 6.5S1 7 1 3.5z" fill={THEMES[theme].accent} />
               </svg>
               × {hud.coins}
