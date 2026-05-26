@@ -70,7 +70,7 @@ export default function Home() {
 
       {/* Pixel Game */}
       <section className="px-12 pb-[60px]">
-        <div className="relative w-full max-w-[1100px] overflow-hidden" style={{ aspectRatio: '1344/600', borderRadius: '2px' }}>
+        <div className="relative w-full max-w-[1100px] overflow-hidden" style={{ aspectRatio: '1344/600', borderRadius: '4px' }}>
           <PixelGame theme="toronto" />
         </div>
         <div className="mt-4 w-full max-w-[1100px] flex items-center gap-2 flex-wrap font-mono text-xs text-[#666]">
