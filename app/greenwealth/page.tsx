@@ -215,10 +215,6 @@ export default function GreenwealthPage() {
             body="Despite a cluttered UI in the legacy product, they valued seeing all available data fields for greater control and confidence."
           />
           <InsightCard
-            label="Heavy Excel Use for Final Output"
-            body="Despite a cluttered UI in the legacy product, they valued seeing all available data fields for greater control and confidence."
-          />
-          <InsightCard
             label="Often Duplicating Previous Reports"
             body="They often duplicated old reports and tweaked filters like date, region etc to save time."
           />
