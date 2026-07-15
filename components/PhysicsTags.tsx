@@ -223,8 +223,8 @@ export default function PhysicsTags({ containerRef }: Props) {
               xmlns="http://www.w3.org/2000/svg"
             >
               {"innerSVG" in SHAPE_PATHS[tag.shape]
-                ? <g dangerouslySetInnerHTML={{ __html: (SHAPE_PATHS[tag.shape] as { innerSVG: string }).innerSVG }} />
-                : <path d={(SHAPE_PATHS[tag.shape] as { path: string }).path} fill={tag.color} />
+                ? <g dangerouslySetInnerHTML={{ __html: (SHAPE_PATHS[tag.shape] as unknown as { innerSVG: string }).innerSVG }} />
+                : <path d={(SHAPE_PATHS[tag.shape] as unknown as { path: string }).path} fill={tag.color} />
               }
             </svg>
           )}
