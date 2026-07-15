@@ -1,7 +1,7 @@
 export default function Footer() {
   return (
-    <footer className="bg-[#fcfcfc] flex flex-col gap-3 px-12 py-20">
-      <p className="text-[24px] font-bold text-black leading-normal">
+    <footer className="bg-[#FDFDFD] flex flex-col gap-3 px-12 py-20">
+      <p className="text-[24px] font-normal text-black leading-normal">
         Thank You.
       </p>
       <p className="text-[18px] font-normal text-black leading-[28px] max-w-[900px]">

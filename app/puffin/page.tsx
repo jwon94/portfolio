@@ -16,18 +16,18 @@ function SolutionIcon() {
 
 export default function PuffinPage() {
   return (
-    <main className="min-h-screen bg-[#fcfcfc]">
+    <main className="min-h-screen bg-[#FDFDFD]">
       <BackButton />
       <Navbar />
 
       {/* ── 1. HERO ─────────────────────────────────────────────── */}
       <section className="px-12 pt-[180px] pb-12">
-        <div className="flex flex-col gap-3 max-w-[900px]">
+        <div className="flex flex-col gap-2 max-w-[900px]">
           <p className="text-[18px] font-normal text-[#a1a1a1] leading-[28px]">
             2021 January - 2023 December / Product Designer
           </p>
-          <h1 className="text-[28px] font-normal text-black leading-[36px]">
-            Making Trip Planning Experience More Exciting
+          <h1 className="text-[28px] leading-[36px] lg:text-[40px] font-normal text-black lg:leading-[48px]">
+            Making trip planning experience more exciting
           </h1>
           <p className="text-[18px] font-normal text-black leading-[28px]">
             This was a side project I worked on with friends throughout 2021~2023. As one of
@@ -50,12 +50,12 @@ export default function PuffinPage() {
 
       {/* ── 2. THE BURDEN ───────────────────────────────────────── */}
       <section className="px-12 py-12">
-        <div className="flex flex-col gap-3 max-w-[900px]">
-          <h2 className="text-[28px] font-normal text-black leading-[36px]">
-            The Burden of Being the Head Trip Planner
-          </h2>
+        <div className="flex flex-col gap-2 max-w-[900px]">
+          <h3 className="text-[20px] leading-[28px] lg:text-[28px] font-normal text-black lg:leading-[36px]">
+            The burden of being the head trip planner
+          </h3>
           <p className="text-[18px] font-normal text-black leading-[28px]">
-            Head Trip Planer is the go-to trip organizer who seamlessly coordinates locations,
+            Head Trip Planner is the go-to trip organizer who seamlessly coordinates locations,
             schedules, and directions into one thoughtful itinerary that reflects everyone&apos;s
             interests. Head Trip Planner spends over 8 hours planning trips—endlessly gathering
             information from travel blogs, Reddit, social media, and more.
@@ -75,10 +75,10 @@ export default function PuffinPage() {
 
       {/* ── 3. INTRODUCING PUFFIN ───────────────────────────────── */}
       <section className="px-12 py-12">
-        <div className="flex flex-col gap-3 max-w-[900px]">
-          <h2 className="text-[28px] font-normal text-black leading-[36px]">
-            Introducing Puffin: A Collaborative Trip Planning Platform
-          </h2>
+        <div className="flex flex-col gap-2 max-w-[900px]">
+          <h3 className="text-[20px] leading-[28px] lg:text-[28px] font-normal text-black lg:leading-[36px]">
+            Introducing Puffin: a collaborative trip planning platform
+          </h3>
           <p className="text-[18px] font-normal text-black leading-[28px]">
             We created Puffin—an all-in-one platform that makes it easy for people to
             collaborate and organize their trips. Puffin streamlines the entire travel planning
@@ -101,19 +101,19 @@ export default function PuffinPage() {
       {/* ── 4. DESIGN SOLUTION MARKER ───────────────────────────── */}
       <section className="px-12 py-12">
         <div className="flex flex-col gap-4 max-w-[900px]">
-          <h2 className="text-[40px] font-normal text-black leading-[48px]">Design Solution</h2>
+          <h2 className="text-[22px] leading-[30px] lg:text-[32px] font-normal text-black lg:leading-[40px]">Design Solution</h2>
         </div>
       </section>
 
       {/* ── 5. EMPOWERING PLANNERS ──────────────────────────────── */}
       <section className="px-12 py-12">
         <div className="w-full max-w-[1344px]">
-          <div className="flex flex-col gap-3 max-w-[900px]">
-            <h2 className="text-[28px] font-normal text-black leading-[36px]">
-              Empowering Planners to Stay Organized and Flexible
-            </h2>
+          <div className="flex flex-col gap-2 max-w-[900px]">
+            <h3 className="text-[20px] leading-[28px] lg:text-[28px] font-normal text-black lg:leading-[36px]">
+              Empowering planners to stay organized and flexible
+            </h3>
             <p className="text-[18px] font-normal text-black leading-[28px]">
-              With an intuitive drag-and-drop interface, building and customizing trip itinerary
+              With an intuitive drag-and-drop interface, building and customizing a trip itinerary
               is effortless. Planners can add places directly to the plan, rearrange schedules
               with ease, and visualize the journey—all while staying organized from start to
               finish.
@@ -158,10 +158,10 @@ export default function PuffinPage() {
       {/* ── 6. PERSONALIZED RECOMMENDATIONS ────────────────────── */}
       <section className="px-12 py-12">
         <div className="w-full max-w-[1344px]">
-          <div className="flex flex-col gap-3 max-w-[900px]">
-            <h2 className="text-[28px] font-normal text-black leading-[36px]">
-              Smarter Exploration with Personalized Recommendations
-            </h2>
+          <div className="flex flex-col gap-2 max-w-[900px]">
+            <h3 className="text-[20px] leading-[28px] lg:text-[28px] font-normal text-black lg:leading-[36px]">
+              Smarter exploration with personalized recommendations
+            </h3>
             <p className="text-[18px] font-normal text-black leading-[28px]">
               Planners often know their main destination but spend hours searching for nearby
               places to explore. Our Recommendations feature simplifies that process by
@@ -185,10 +185,10 @@ export default function PuffinPage() {
       {/* ── 7. MOBILE EXPERIENCE ────────────────────────────────── */}
       <section className="px-12 py-12">
         <div className="w-full max-w-[1344px]">
-          <div className="flex flex-col gap-3 max-w-[900px]">
-            <h2 className="text-[28px] font-normal text-black leading-[36px]">
-              Prioritizing Mobile to Drive Engagement
-            </h2>
+          <div className="flex flex-col gap-2 max-w-[900px]">
+            <h3 className="text-[20px] leading-[28px] lg:text-[28px] font-normal text-black lg:leading-[36px]">
+              Prioritizing mobile to drive engagement
+            </h3>
             <p className="text-[18px] font-normal text-black leading-[28px]">
               After our initial beta launch, analytics from Amplitude and FullStory revealed
               that nearly 50% of users were exploring our product on mobile. To avoid losing
@@ -213,10 +213,10 @@ export default function PuffinPage() {
       {/* ── 8. AI TRIP PLANNING ─────────────────────────────────── */}
       <section className="px-12 py-12">
         <div className="w-full max-w-[1344px]">
-          <div className="flex flex-col gap-3 max-w-[900px]">
-            <h2 className="text-[28px] font-normal text-black leading-[36px]">
-              Bringing AI to Trip Planning with Puffin
-            </h2>
+          <div className="flex flex-col gap-2 max-w-[900px]">
+            <h3 className="text-[20px] leading-[28px] lg:text-[28px] font-normal text-black lg:leading-[36px]">
+              Bringing AI to trip planning with Puffin
+            </h3>
             <p className="text-[18px] font-normal text-black leading-[28px]">
               In early 2023, AI began reshaping the trip planning experience—transforming an
               overwhelming task into a smarter, more collaborative process. With Puffin, we
@@ -240,10 +240,10 @@ export default function PuffinPage() {
       {/* ── 9. PRODUCT HUNT ─────────────────────────────────────── */}
       <section className="px-12 py-12">
         <div className="w-full max-w-[1344px]">
-          <div className="flex flex-col gap-3 max-w-[900px]">
-            <h2 className="text-[28px] font-normal text-black leading-[36px]">
-              Early Traction Through Product Hunt
-            </h2>
+          <div className="flex flex-col gap-2 max-w-[900px]">
+            <h3 className="text-[20px] leading-[28px] lg:text-[28px] font-normal text-black lg:leading-[36px]">
+              Early traction through Product Hunt
+            </h3>
             <p className="text-[18px] font-normal text-black leading-[28px]">
               After multiple design iterations and the launch of our MVP, we were ready to share
               Puffin with a broader travel community. We chose to launch on Product Hunt—and it

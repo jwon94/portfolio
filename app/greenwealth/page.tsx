@@ -48,23 +48,21 @@ function StrategyCard({ label, body }: { label: string; body: string }) {
 
 export default function GreenwealthPage() {
   return (
-    <main className="min-h-screen bg-[#fcfcfc]">
+    <main className="min-h-screen bg-[#FDFDFD]">
       <BackButton />
       <Navbar />
 
       {/* ── 1. HERO ─────────────────────────────────────────────── */}
       <section className="px-12 pt-[180px] pb-12">
-        <div className="flex flex-col gap-3 max-w-[900px]">
+        <div className="flex flex-col gap-2 max-w-[900px]">
           <p className="text-[18px] font-normal text-[#a1a1a1] leading-[28px]">
             2024 July - 2024 November / Lead Designer
           </p>
-          <h1 className="text-[28px] font-normal text-black leading-[36px]">
-            Designing Scenario Builder for Investment Performance Managers
+          <h1 className="text-[28px] leading-[36px] lg:text-[40px] font-normal text-black lg:leading-[48px]">
+            Designing an enterprise scenario planning tool that simplified complex financial workflows
           </h1>
           <p className="text-[18px] font-normal text-black leading-[28px]">
-            I led the end-to-end design of an enterprise platform for EverGreen Wealth
-            (Whitelabelled company), streamlining complex financial workflows and cutting
-            weekly operational hours by 50%.{" "}
+            Led end-to-end design of an enterprise scenario planning platform for EverGreen Wealth, replacing manual Excel workflows that cost performance managers 8+ hours per report.{" "}
             <span className="text-[#a1a1a1]">
               *Client name has been white-labeled due to NDA requirements.
             </span>
@@ -86,61 +84,91 @@ export default function GreenwealthPage() {
 
       {/* ── 2. PROJECT CONTEXT ──────────────────────────────────── */}
       <section className="px-12 py-12">
-        <div className="flex flex-col gap-3 max-w-[900px]">
-          <p className="text-[18px] font-normal text-[#a1a1a1] leading-[28px]">
-            Project Context
-          </p>
-          <h2 className="text-[28px] font-normal text-black leading-[36px]">
-            Custom Reporting for Complex Scenarios is Slow and Fragmented
-          </h2>
-          <p className="text-[18px] font-normal text-black leading-[28px]">
-            Performance managers analyze data across departments—such as Real Estate, Credit,
-            and Private Equity—using various breakdowns by region, sector, currency, and
-            benchmarks. However, due to limitations of the legacy tool and siloed workflows,
-            they rely on manual Excel work to extract, clean, and reconcile data—leading to
-            duplicated effort, delays, and increased risk of error.
-          </p>
+        <div className="flex flex-col gap-6">
+          <div className="flex flex-col gap-2 max-w-[900px]">
+            <p className="text-[18px] font-normal text-[#a1a1a1] leading-[28px]">
+              User Problem
+            </p>
+            <h3 className="text-[20px] leading-[28px] lg:text-[28px] font-normal text-black lg:leading-[36px]">
+              Custom reporting for complex scenarios is slow and fragmented
+            </h3>
+            <p className="text-[18px] font-normal text-black leading-[28px]">
+              Performance managers at CPPIB oversee and analyze the financial performance of
+              investments and ensuring alignment with the organization&apos;s financial goals. Their
+              responsibilities focus on performance measurements, analysis, and reporting, which
+              helps to inform strategic investment decisions.
+            </p>
+          </div>
+          <Image
+            src="/images/greenwealth/user-problem.png"
+            alt="User workflow showing the fragmented data extraction process"
+            width={4008}
+            height={1700}
+            quality={100}
+            className="w-full max-w-[1344px] rounded-xl"
+          />
         </div>
       </section>
 
       {/* ── 3. BUSINESS PROBLEM ─────────────────────────────────── */}
       <section className="px-12 py-12">
-        <div className="flex flex-col gap-3 max-w-[900px]">
-          <p className="text-[18px] font-normal text-[#a1a1a1] leading-[28px]">
-            Business Problem
-          </p>
-          <h2 className="text-[28px] font-normal text-black leading-[36px]">
-            1,200+ Hours Lost Weekly Due to Inefficiencies — Across a Team of 50 Performance Managers
-          </h2>
-          <p className="text-[18px] font-normal text-black leading-[28px]">
-            EverGreen Wealth's performance managers spend over 1,200 hours weekly on manual
-            custom reporting. Each manager handles 3–5 report requests per week, with each
-            taking 8+ hours due to complex data requirements and outdated, siloed tools.
-          </p>
+        <div className="flex flex-col gap-6">
+          <div className="flex flex-col gap-2 max-w-[900px]">
+            <p className="text-[18px] font-normal text-[#a1a1a1] leading-[28px]">
+              Business Problem
+            </p>
+            <h3 className="text-[20px] leading-[28px] lg:text-[28px] font-normal text-black lg:leading-[36px]">
+              Of the 8+ hours per report, most is spent on manual data extraction, not analysis
+            </h3>
+            <p className="text-[18px] font-normal text-black leading-[28px]">
+              Each report takes a performance manager 8+ hours to complete. The bulk of that time
+              goes to manually extracting, cleaning, and reconciling data across legacy tools and
+              Excel rather than the actual analysis and insight work.
+            </p>
+          </div>
+          <Image
+            src="/images/greenwealth/business-reason.png"
+            alt="Hours breakdown: most time spent on manual data extraction, not analysis"
+            width={4008}
+            height={1320}
+            quality={100}
+            className="w-full max-w-[1344px] rounded-xl"
+          />
         </div>
       </section>
 
       {/* ── 4. PRODUCT GOAL ─────────────────────────────────────── */}
       <section className="px-12 py-12">
-        <div className="flex flex-col gap-3 max-w-[880px]">
-          <p className="text-[18px] font-normal text-[#a1a1a1] leading-[28px]">
-            Product Goal
-          </p>
-          <h2 className="text-[28px] font-normal text-black leading-[36px]">
-            Enable Performance Managers to Quickly Build Custom Reports
-          </h2>
-          <p className="text-[18px] font-normal text-black leading-[28px]">
-            Design an enterprise product that enables performance managers to generate complex
-            investment reports quickly and accurately—eliminating manual effort, reducing errors,
-            and streamlining cross-departmental reporting workflows.
-          </p>
+        <div className="flex flex-col gap-6">
+          <div className="flex flex-col gap-2 max-w-[880px]">
+            <p className="text-[18px] font-normal text-[#a1a1a1] leading-[28px]">
+              Product Goal
+            </p>
+            <h3 className="text-[20px] leading-[28px] lg:text-[28px] font-normal text-black lg:leading-[36px]">
+              Enable performance managers to quickly build custom reports
+            </h3>
+            <p className="text-[18px] font-normal text-black leading-[28px]">
+              Design an enterprise product that enables performance managers to generate complex
+              investment reports quickly and accurately, eliminating manual effort, reducing errors,
+              and streamlining cross-departmental reporting workflows.
+            </p>
+          </div>
+          <Image
+            src="/images/greenwealth/product-goal.png"
+            alt="Product goal: replacing manual data steps with a streamlined reporting tool"
+            width={4008}
+            height={1700}
+            quality={100}
+            className="w-full max-w-[1344px] rounded-xl"
+          />
         </div>
       </section>
 
       {/* ── 5. DISCOVERY PHASE MARKER ───────────────────────────── */}
-      <section className="px-12 py-12">
-        <div className="flex flex-col gap-4 max-w-[900px]">
-          <h2 className="text-[40px] font-normal text-black leading-[48px]">Discovery</h2>
+      <section className="px-12 pt-24 pb-12">
+        <div className="flex flex-col gap-2 max-w-[900px]">
+          <p className="text-[18px] font-normal text-[#a1a1a1] leading-[28px]">01 — Phase</p>
+          <h2 className="text-[22px] leading-[30px] lg:text-[32px] font-normal text-black lg:leading-[40px]">Discovery</h2>
           <p className="text-[18px] font-normal text-black leading-[28px]">
             During the discovery phase, I prioritized understanding the performance managers'
             workflows and responsibilities. In the first two weeks of the project, I conducted
@@ -153,13 +181,13 @@ export default function GreenwealthPage() {
 
       {/* ── 6. UNDERSTANDING ROLE ───────────────────────────────── */}
       <section className="px-12 py-12">
-        <div className="flex flex-col gap-3 max-w-[900px]">
-          <h2 className="text-[28px] font-normal text-black leading-[36px]">
-            Understanding the Role of Performance Managers at GreenWealth
-          </h2>
+        <div className="flex flex-col gap-2 max-w-[900px]">
+          <h3 className="text-[20px] leading-[28px] lg:text-[28px] font-normal text-black lg:leading-[36px]">
+            Understanding the role of performance managers at GreenWealth
+          </h3>
           <p className="text-[18px] font-normal text-black leading-[28px]">
             Performance managers at GreenWealth oversee and analyze the financial performance
-            of investments and ensuring alignment with the organization's financial goals. Their
+            of investments and ensure alignment with the organization's financial goals. Their
             responsibilities focus on performance measurements, analysis, and reporting, which
             helps to inform strategic investment decisions.
           </p>
@@ -168,10 +196,10 @@ export default function GreenwealthPage() {
 
       {/* ── 7. REVIEWING LEGACY ─────────────────────────────────── */}
       <section className="px-12 py-12">
-        <div className="flex flex-col gap-3 max-w-[900px]">
-          <h2 className="text-[28px] font-normal text-black leading-[36px]">
-            Reviewing Legacy Products to Identify What Works and What Doesn&apos;t
-          </h2>
+        <div className="flex flex-col gap-2 max-w-[900px]">
+          <h3 className="text-[20px] leading-[28px] lg:text-[28px] font-normal text-black lg:leading-[36px]">
+            Reviewing legacy products to identify what works and what doesn&apos;t
+          </h3>
           <p className="text-[18px] font-normal text-black leading-[28px]">
             During 1:1 interviews with performance managers, I asked them to walk me through
             their legacy products and highlight what works and what doesn&apos;t. While the tool
@@ -194,10 +222,10 @@ export default function GreenwealthPage() {
 
       {/* ── 8. INSIGHTS ─────────────────────────────────────────── */}
       <section className="px-12 py-12">
-        <div className="flex flex-col gap-3 max-w-[900px]">
-          <h2 className="text-[28px] font-normal text-black leading-[36px]">
-            Insights from Performance Manager Interviews
-          </h2>
+        <div className="flex flex-col gap-2 max-w-[900px]">
+          <h3 className="text-[20px] leading-[28px] lg:text-[28px] font-normal text-black lg:leading-[36px]">
+            Insights from performance manager interviews
+          </h3>
           <p className="text-[18px] font-normal text-black leading-[28px]">
             Given the complexity and nuance of their processes, these in-depth sessions were
             critical for uncovering actionable insights. Below are the key findings from the
@@ -208,7 +236,7 @@ export default function GreenwealthPage() {
         <div className="mt-6 max-w-[900px]">
           <InsightCard
             label="Switching Between Tools Created Workflow Friction"
-            body="Performance managers juggled two legacy systems and Excel, each with different logic—slowing them down and increasing error risk."
+            body="Performance managers juggled two legacy systems and Excel, each with different logic, slowing them down and increasing error risk."
           />
           <InsightCard
             label="Full Data Visibility was Valued"
@@ -222,9 +250,10 @@ export default function GreenwealthPage() {
       </section>
 
       {/* ── 9. DEFINE PHASE MARKER ──────────────────────────────── */}
-      <section className="px-12 py-12">
-        <div className="flex flex-col gap-4 max-w-[900px]">
-          <h2 className="text-[40px] font-normal text-black leading-[48px]">Define</h2>
+      <section className="px-12 pt-24 pb-12">
+        <div className="flex flex-col gap-2 max-w-[900px]">
+          <p className="text-[18px] font-normal text-[#a1a1a1] leading-[28px]">02 — Phase</p>
+          <h2 className="text-[22px] leading-[30px] lg:text-[32px] font-normal text-black lg:leading-[40px]">Define</h2>
           <p className="text-[18px] font-normal text-black leading-[28px]">
             After the discovery phase, I synthesized the insights and distilled them into key
             problems, which helped shape the design approach and direction.
@@ -234,10 +263,10 @@ export default function GreenwealthPage() {
 
       {/* ── 10. TRANSLATING RESEARCH ────────────────────────────── */}
       <section className="px-12 py-12">
-        <div className="flex flex-col gap-3 max-w-[900px]">
-          <h2 className="text-[28px] font-normal text-black leading-[36px]">
-            Translating Research into Design Strategy
-          </h2>
+        <div className="flex flex-col gap-2 max-w-[900px]">
+          <h3 className="text-[20px] leading-[28px] lg:text-[28px] font-normal text-black lg:leading-[36px]">
+            Translating research into design strategy
+          </h3>
           <p className="text-[18px] font-normal text-black leading-[28px]">
             After conducting user research and multiple in-depth knowledge transfer (KT) sessions
             with the product manager and performance managers, I synthesized the information to
@@ -263,14 +292,14 @@ export default function GreenwealthPage() {
 
       {/* ── 11. DEFINING MVP ────────────────────────────────────── */}
       <section className="px-12 py-12">
-        <div className="flex flex-col gap-3 max-w-[900px]">
-          <h2 className="text-[28px] font-normal text-black leading-[36px]">
-            Defining the first MVP for this Product
-          </h2>
+        <div className="flex flex-col gap-2 max-w-[900px]">
+          <h3 className="text-[20px] leading-[28px] lg:text-[28px] font-normal text-black lg:leading-[36px]">
+            Defining the first MVP for this product
+          </h3>
           <p className="text-[18px] font-normal text-black leading-[28px]">
             Before diving into solutions, I led a collaborative session with the product manager,
             tech lead, and three business stakeholders (VP of Finance Performance, Senior Director
-            Performance Management, Senior Performance Manager) define core features. The main
+            Performance Management, Senior Performance Manager) to define core features. The main
             challenge was aligning on the MVP, as the team often pushed for &quot;nice-to-have&quot;
             features. To address this, I facilitated a focused 1-hour workshop to prioritize and
             clearly define the core MVP.
@@ -301,9 +330,10 @@ export default function GreenwealthPage() {
       </section>
 
       {/* ── 12. DEVELOP PHASE MARKER ────────────────────────────── */}
-      <section className="px-12 py-12">
-        <div className="flex flex-col gap-4 max-w-[900px]">
-          <h2 className="text-[40px] font-normal text-black leading-[48px]">Develop</h2>
+      <section className="px-12 pt-24 pb-12">
+        <div className="flex flex-col gap-2 max-w-[900px]">
+          <p className="text-[18px] font-normal text-[#a1a1a1] leading-[28px]">03 — Phase</p>
+          <h2 className="text-[22px] leading-[30px] lg:text-[32px] font-normal text-black lg:leading-[40px]">Develop</h2>
           <p className="text-[18px] font-normal text-black leading-[28px]">
             To kick off the solution phase, I led a fast-paced workshop with the internal team
             to draft initial concepts. Given the tight six-week timeline, the process involved
@@ -316,10 +346,10 @@ export default function GreenwealthPage() {
 
       {/* ── 13. CREATING CORE USERFLOW ──────────────────────────── */}
       <section className="px-12 py-12">
-        <div className="flex flex-col gap-3 max-w-[880px]">
-          <h2 className="text-[28px] font-normal text-black leading-[36px]">
-            Creating Core Userflow Together
-          </h2>
+        <div className="flex flex-col gap-2 max-w-[880px]">
+          <h3 className="text-[20px] leading-[28px] lg:text-[28px] font-normal text-black lg:leading-[36px]">
+            Creating the core user flow together
+          </h3>
           <p className="text-[18px] font-normal text-black leading-[28px]">
             I facilitated a white-boarding session to map out the core use cases and define the
             main user flow. By first sketching a basic skeleton of the &quot;happy path,&quot; I gave
@@ -343,13 +373,13 @@ export default function GreenwealthPage() {
 
       {/* ── 14. DESIGNING BEST LAYOUT ───────────────────────────── */}
       <section className="px-12 py-12">
-        <div className="flex flex-col gap-3 max-w-[880px]">
-          <h2 className="text-[28px] font-normal text-black leading-[36px]">
-            Designing the Best Layout for Performance Manager
-          </h2>
+        <div className="flex flex-col gap-2 max-w-[880px]">
+          <h3 className="text-[20px] leading-[28px] lg:text-[28px] font-normal text-black lg:leading-[36px]">
+            Designing the best layout for performance managers
+          </h3>
           <p className="text-[18px] font-normal text-black leading-[28px]">
             To determine the most effective layout for scenario-building, I explored three
-            low-fidelity options—each reflecting a different interaction model. My goal was to
+            low-fidelity options, each reflecting a different interaction model. My goal was to
             find the best way to support power users in building custom financial scenarios
             efficiently and confidently.
           </p>
@@ -369,10 +399,10 @@ export default function GreenwealthPage() {
 
       {/* ── 15. EVALUATING TRADE-OFFS ───────────────────────────── */}
       <section className="px-12 py-12">
-        <div className="flex flex-col gap-3 max-w-[880px]">
-          <h2 className="text-[28px] font-normal text-black leading-[36px]">
-            Evaluating Design Trade-Offs with Product and Engineering Stakeholders
-          </h2>
+        <div className="flex flex-col gap-2 max-w-[880px]">
+          <h3 className="text-[20px] leading-[28px] lg:text-[28px] font-normal text-black lg:leading-[36px]">
+            Evaluating design trade-offs with product and engineering stakeholders
+          </h3>
           <p className="text-[18px] font-normal text-black leading-[28px]">
             I presented each low-fidelity option to stakeholders across product and engineering.
             We discussed trade-offs for each layout.
@@ -386,7 +416,7 @@ export default function GreenwealthPage() {
           />
           <InsightCard
             label="Excel-Like Experience"
-            body="Across all options, stakeholders emphasized the importance of preserving familiar data behaviors—such as tabular layouts and multi-step formulas—commonly found in Excel."
+            body="Across all options, stakeholders emphasized the importance of preserving familiar data behaviors like tabular layouts and multi-step formulas commonly found in Excel."
           />
           <InsightCard
             label="Lack of Guidance and Unclear Layout"
@@ -397,10 +427,10 @@ export default function GreenwealthPage() {
 
       {/* ── 16. CHOOSING DESIGN PATH ────────────────────────────── */}
       <section className="px-12 py-12">
-        <div className="flex flex-col gap-3 max-w-[900px]">
-          <h2 className="text-[28px] font-normal text-black leading-[36px]">
-            Choosing the Right Design Path
-          </h2>
+        <div className="flex flex-col gap-2 max-w-[900px]">
+          <h3 className="text-[20px] leading-[28px] lg:text-[28px] font-normal text-black lg:leading-[36px]">
+            Choosing the right design path
+          </h3>
           <p className="text-[18px] font-normal text-black leading-[28px]">
             Initially, I was biased toward the first design option, as I believed it clearly
             represented the scenario being built. However, after discussions with the team and
@@ -424,21 +454,22 @@ export default function GreenwealthPage() {
       </section>
 
       {/* ── 17. DESIGN SOLUTION MARKER ──────────────────────────── */}
-      <section className="px-12 py-12">
-        <div className="flex flex-col gap-4 max-w-[900px]">
-          <h2 className="text-[40px] font-normal text-black leading-[48px]">Design Solution</h2>
+      <section className="px-12 pt-24 pb-12">
+        <div className="flex flex-col gap-2 max-w-[900px]">
+          <p className="text-[18px] font-normal text-[#a1a1a1] leading-[28px]">04 — Phase</p>
+          <h2 className="text-[22px] leading-[30px] lg:text-[32px] font-normal text-black lg:leading-[40px]">Design Solution</h2>
         </div>
       </section>
 
       {/* ── 18. LAYOUT ALIGNED ──────────────────────────────────── */}
       <section className="px-12 py-12">
-        <div className="flex flex-col gap-3 max-w-[900px]">
-          <h2 className="text-[28px] font-normal text-black leading-[36px]">
-            Layout Aligned with Users&apos; Logical Workflow
-          </h2>
+        <div className="flex flex-col gap-2 max-w-[900px]">
+          <h3 className="text-[20px] leading-[28px] lg:text-[28px] font-normal text-black lg:leading-[36px]">
+            Layout aligned with users&apos; logical workflow
+          </h3>
           <p className="text-[18px] font-normal text-black leading-[28px]">
             The final design approach prioritized a flow that mirrors how users naturally think
-            through scenarios—starting with defining key parameters (e.g., dates, return type),
+            through scenarios, starting with defining key parameters (e.g., dates, return type),
             then selecting metrics, and finally organizing the data. This structured sequence
             supports clarity, efficiency, and familiarity.
           </p>
@@ -460,10 +491,10 @@ export default function GreenwealthPage() {
       <section className="px-12 py-12">
         {/* Top: title + body + wide image */}
         <div className="w-full max-w-[1344px]">
-          <div className="flex flex-col gap-3 max-w-[900px]">
-            <h2 className="text-[28px] font-normal text-black leading-[36px]">
-              Helping Users to Sort Through the Long List of Metrics Easily
-            </h2>
+          <div className="flex flex-col gap-2 max-w-[900px]">
+            <h3 className="text-[20px] leading-[28px] lg:text-[28px] font-normal text-black lg:leading-[36px]">
+              Helping users to sort through the long list of metrics easily
+            </h3>
             <p className="text-[18px] font-normal text-black leading-[28px]">
               The most important aspect for users was the ability to quickly select specific key
               metrics and perform metric aggregation. Users needed to view all available data,
@@ -486,9 +517,9 @@ export default function GreenwealthPage() {
         {/* Two-column row 1: text left / group-select image right */}
         <div className="mt-8 flex gap-6 w-full max-w-[1344px]">
           <div className="flex-1 flex flex-col justify-center gap-2">
-            <h3 className="text-[24px] font-normal text-black leading-[32px]">
-              Improving Usability for Long Lists Through Group and Level Selection
-            </h3>
+            <h4 className="text-[18px] leading-[26px] lg:text-[24px] font-normal text-black lg:leading-[32px]">
+              Improving usability for long lists through group and level selection
+            </h4>
             <p className="text-[18px] font-normal text-black leading-[28px]">
               Users can navigate groupings in bulk, avoiding the need to manually sift through
               each grouping. This makes the process faster and more manageable.
@@ -508,12 +539,12 @@ export default function GreenwealthPage() {
         {/* Two-column row 2: text left / level-select image right */}
         <div className="mt-8 flex gap-6 w-full max-w-[1344px]">
           <div className="flex-1 flex flex-col justify-center gap-2">
-            <h3 className="text-[24px] font-normal text-black leading-[32px]">
-              Find Fields Instantly with Quick Search
-            </h3>
+            <h4 className="text-[18px] leading-[26px] lg:text-[24px] font-normal text-black lg:leading-[32px]">
+              Find fields instantly with quick search
+            </h4>
             <p className="text-[18px] font-normal text-black leading-[28px]">
               If users know the type of field they&apos;re looking for, the quick search feature
-              helps them find it instantly—eliminating the need to scroll through long lists.
+              helps them find it instantly, eliminating the need to scroll through long lists.
             </p>
           </div>
           <div className="relative w-[660px] flex-shrink-0 aspect-[660/589] rounded-xl overflow-hidden">
@@ -531,10 +562,10 @@ export default function GreenwealthPage() {
       {/* ── 20. GIVE FLEXIBILITY (complex) ──────────────────────── */}
       <section className="px-12 py-12">
         <div className="w-full max-w-[1344px]">
-          <div className="flex flex-col gap-3 max-w-[900px]">
-            <h2 className="text-[28px] font-normal text-black leading-[36px]">
-              Give Flexibility to Easily Include or Exclude Specific Types Quickly
-            </h2>
+          <div className="flex flex-col gap-2 max-w-[900px]">
+            <h3 className="text-[20px] leading-[28px] lg:text-[28px] font-normal text-black lg:leading-[36px]">
+              Give flexibility to easily include or exclude specific types quickly
+            </h3>
             <p className="text-[18px] font-normal text-black leading-[28px]">
               A key feature for users is the ability to define which investment strategies to
               include in their metric calculations. The challenge was to give users the
@@ -558,13 +589,13 @@ export default function GreenwealthPage() {
         {/* Two-column row: text left / conditions-detail image right */}
         <div className="mt-8 flex gap-6 w-full max-w-[1344px]">
           <div className="flex-1 flex flex-col justify-center gap-2">
-            <h3 className="text-[24px] font-normal text-black leading-[32px]">
-              Define Custom Logic with Conditions
-            </h3>
+            <h4 className="text-[18px] leading-[26px] lg:text-[24px] font-normal text-black lg:leading-[32px]">
+              Define custom logic with conditions
+            </h4>
             <p className="text-[18px] font-normal text-black leading-[28px]">
               Users can define specific conditions to automatically filter data used in metric
               calculations. For example, when focusing on certain investment types, conditional
-              logic surfaces only the relevant data—streamlining the workflow and reducing both
+              logic surfaces only the relevant data, streamlining the workflow and reducing both
               manual effort and cognitive load.
             </p>
           </div>
@@ -582,10 +613,10 @@ export default function GreenwealthPage() {
 
       {/* ── 21. LETTING USERS CHOOSE ────────────────────────────── */}
       <section className="px-12 py-12">
-        <div className="flex flex-col gap-3 max-w-[880px]">
-          <h2 className="text-[28px] font-normal text-black leading-[36px]">
-            Letting Users Choose How Data is Displayed
-          </h2>
+        <div className="flex flex-col gap-2 max-w-[880px]">
+          <h3 className="text-[20px] leading-[28px] lg:text-[28px] font-normal text-black lg:leading-[36px]">
+            Letting users choose how data is displayed
+          </h3>
           <p className="text-[18px] font-normal text-black leading-[28px]">
             This solution provides users with a dedicated section where they can select how to
             organize their data in the final scenario. Users can define the specific category
@@ -607,14 +638,14 @@ export default function GreenwealthPage() {
 
       {/* ── 22. PREVIEW FINAL REPORT ────────────────────────────── */}
       <section className="px-12 py-12">
-        <div className="flex flex-col gap-3 max-w-[880px]">
-          <h2 className="text-[28px] font-normal text-black leading-[36px]">
-            Preview the Final Report
-          </h2>
+        <div className="flex flex-col gap-2 max-w-[880px]">
+          <h3 className="text-[20px] leading-[28px] lg:text-[28px] font-normal text-black lg:leading-[36px]">
+            Preview the final report
+          </h3>
           <p className="text-[18px] font-normal text-black leading-[28px]">
             A key functionality for users is the ability to preview data after completing the
             scenario setup. Once all conditions, filters, and selections are in place, users
-            need an easy way to run the scenario and view a preview of the final report—helping
+            need an easy way to run the scenario and view a preview of the final report, helping
             them validate their inputs, catch errors early, and build confidence in the results
             before sharing or finalizing.
           </p>

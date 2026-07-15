@@ -14,7 +14,7 @@ export default function Navbar() {
   };
 
   return (
-    <nav className="sticky top-0 z-40 bg-[#fcfcfc] border-b border-[#f0f0f0] flex items-center justify-between px-12 py-6 w-full">
+    <nav className="sticky top-0 z-40 bg-[#FDFDFD] border-b border-[#f0f0f0] flex items-center justify-between px-12 py-6 w-full">
       <Link
         href="/"
         className="text-[18px] font-bold text-black leading-[28px] hover:opacity-70 transition-opacity whitespace-nowrap"
@@ -29,6 +29,13 @@ export default function Navbar() {
           className="text-[18px] font-semibold text-black leading-[28px] hover:opacity-70 transition-opacity"
         >
           My Work
+        </Link>
+
+        <Link
+          href="/view-code"
+          className="text-[18px] font-semibold text-black leading-[28px] hover:opacity-70 transition-opacity"
+        >
+          Vibe Code
         </Link>
 
         <Link

@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Inter, Abril_Fatface } from "next/font/google";
 import "./globals.css";
+import ViewCursor from "@/components/ViewCursor";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -15,6 +16,7 @@ const abrilFatface = Abril_Fatface({
   display: "swap",
 });
 
+
 export const metadata: Metadata = {
   title: "Chelsea Hwang — Product Designer",
   description:
@@ -28,7 +30,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className={`${inter.variable} ${abrilFatface.variable} antialiased`}>
-      <body className="min-h-screen bg-[#fcfcfc] font-sans">{children}</body>
+      <body className="min-h-screen bg-[#FDFDFD] font-sans">
+        <ViewCursor />
+        {children}
+      </body>
     </html>
   );
 }
