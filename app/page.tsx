@@ -19,7 +19,7 @@ const projects: {
 }[] = [
   {
     id: "turbotax",
-    date: "2024 October - 2026 May / Lead Product Designer",
+    date: "2025 October - 2026 May / Lead Product Designer",
     title: "Driving conversion across the TurboTax acquisition funnel",
     description:
       "Led product design across Intuit TurboTax's full acquisition funnel, redesigning promotional landing pages to boost visitor-to-sign-in conversion and restructuring the in-product service selection flow to drive higher expert tier adoption.",
