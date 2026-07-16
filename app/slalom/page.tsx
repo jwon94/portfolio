@@ -13,7 +13,7 @@ export default function SlalomPage() {
       <section className="px-12 pt-[180px] pb-12">
         <div className="flex flex-col gap-2 max-w-[900px]">
           <p className="text-[18px] font-normal text-[#a1a1a1] leading-[28px]">
-            2024 January / Lead Designer
+            2023 January - 2023 June / Design Community Lead
           </p>
           <h1 className="text-[28px] leading-[36px] lg:text-[40px] font-normal text-black lg:leading-[48px]">
             Leading a design learning program that scaled to 30+ designers at Slalom Build
