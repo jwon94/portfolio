@@ -62,7 +62,7 @@ export default function GreenwealthPage() {
             Designing an enterprise scenario planning tool that simplified complex financial workflows
           </h1>
           <p className="text-[18px] font-normal text-black leading-[28px]">
-            Led end-to-end design of an enterprise scenario planning platform for GreenWealth, replacing manual Excel workflows that cost performance managers 8+ hours per report.{" "}
+            Led end-to-end design of an enterprise scenario planning platform for Evergreen Wealth, replacing manual Excel workflows that cost performance managers 8+ hours per report.{" "}
             <span className="text-[#a1a1a1]">
               *Client name has been white-labeled due to NDA requirements.
             </span>
@@ -93,7 +93,7 @@ export default function GreenwealthPage() {
               Custom reporting for complex scenarios is slow and fragmented
             </h3>
             <p className="text-[18px] font-normal text-black leading-[28px]">
-              Performance managers at GreenWealth oversee and analyze the financial performance of
+              Performance managers at Evergreen Wealth oversee and analyze the financial performance of
               investments and ensure alignment with the organization&apos;s financial goals. Their
               responsibilities focus on performance measurements, analysis, and reporting, which
               helps to inform strategic investment decisions.
@@ -183,10 +183,10 @@ export default function GreenwealthPage() {
       <section className="px-12 py-12">
         <div className="flex flex-col gap-2 max-w-[900px]">
           <h3 className="text-[20px] leading-[28px] lg:text-[28px] font-normal text-black lg:leading-[36px]">
-            Understanding the role of performance managers at GreenWealth
+            Understanding the role of performance managers at Evergreen Wealth
           </h3>
           <p className="text-[18px] font-normal text-black leading-[28px]">
-            Performance managers at GreenWealth oversee and analyze the financial performance
+            Performance managers at Evergreen Wealth oversee and analyze the financial performance
             of investments and ensure alignment with the organization's financial goals. Their
             responsibilities focus on performance measurements, analysis, and reporting, which
             helps to inform strategic investment decisions.
