@@ -42,7 +42,7 @@ export default function SlalomPage() {
           </h3>
           <p className="text-[18px] font-normal text-black leading-[28px]">
             As a senior experience designer, I found myself and my peers often reflecting on areas
-            we wanted to improve: facilitation, coding, prototyping, but struggling to make space
+            we wanted to improve: facilitation, coding, and prototyping, but struggling to make space
             for it amidst fast-paced consulting work. It became clear that many of us were trying
             to grow in isolation. So I started thinking, what would it look like if we just did
             that together? We could hold each other accountable, learn from each other&apos;s work,

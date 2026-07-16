@@ -14,7 +14,7 @@ export default function ViewCodePage() {
             Vibe Code
           </h1>
           <p className="text-[18px] font-normal text-black leading-[28px]">
-            I love experimenting with new tools and finding ways to weave AI into my creative process. This is my playground, small design side projects I built with Claude Code just to see what&apos;s possible.
+            I love experimenting with new tools and finding ways to weave AI into my creative process. This is my playground — small design side projects I built with Claude Code just to see what&apos;s possible.
           </p>
         </div>
 
