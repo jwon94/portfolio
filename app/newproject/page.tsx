@@ -38,9 +38,9 @@ export default function TurboTaxPage() {
             Driving conversion across the TurboTax acquisition funnel
           </h1>
           <p className="text-[18px] font-normal text-black leading-[28px]">
-            As the lead designer for TurboTax&apos;s top of funnel and mid-funnel, I led the
-            top of funnel design and engineering team to tackle two key conversion problems:
-            improving sign-in rates across top of funnel pages and increasing
+            As the lead designer for TurboTax&apos;s top-of-funnel and mid-funnel, I led the
+            design and engineering team to tackle two key conversion problems:
+            improving sign-in rates across top-of-funnel pages and increasing
             expert-assisted tier selection during onboarding.
           </p>
         </div>

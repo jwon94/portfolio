@@ -62,7 +62,7 @@ export default function GreenwealthPage() {
             Designing an enterprise scenario planning tool that simplified complex financial workflows
           </h1>
           <p className="text-[18px] font-normal text-black leading-[28px]">
-            Led end-to-end design of an enterprise scenario planning platform for EverGreen Wealth, replacing manual Excel workflows that cost performance managers 8+ hours per report.{" "}
+            Led end-to-end design of an enterprise scenario planning platform for GreenWealth, replacing manual Excel workflows that cost performance managers 8+ hours per report.{" "}
             <span className="text-[#a1a1a1]">
               *Client name has been white-labeled due to NDA requirements.
             </span>
@@ -93,7 +93,7 @@ export default function GreenwealthPage() {
               Custom reporting for complex scenarios is slow and fragmented
             </h3>
             <p className="text-[18px] font-normal text-black leading-[28px]">
-              Performance managers at CPPIB oversee and analyze the financial performance of
+              Performance managers at GreenWealth oversee and analyze the financial performance of
               investments and ensuring alignment with the organization&apos;s financial goals. Their
               responsibilities focus on performance measurements, analysis, and reporting, which
               helps to inform strategic investment decisions.
@@ -244,7 +244,7 @@ export default function GreenwealthPage() {
           />
           <InsightCard
             label="Often Duplicating Previous Reports"
-            body="They often duplicated old reports and tweaked filters like date, region etc to save time."
+            body="They often duplicated old reports and tweaked filters like date, region, etc. to save time."
           />
         </div>
       </section>
