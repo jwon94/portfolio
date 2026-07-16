@@ -34,7 +34,7 @@ function Shape({ name, size = 48, rotate = 0 }: { name: keyof typeof SHAPES; siz
   );
 }
 
-export default function CloudcastPage() {
+export default function AwsPage() {
   return (
     <main className="min-h-screen bg-[#FDFDFD]">
       <BackButton />
