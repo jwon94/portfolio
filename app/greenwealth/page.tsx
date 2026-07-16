@@ -94,7 +94,7 @@ export default function GreenwealthPage() {
             </h3>
             <p className="text-[18px] font-normal text-black leading-[28px]">
               Performance managers at GreenWealth oversee and analyze the financial performance of
-              investments and ensuring alignment with the organization&apos;s financial goals. Their
+              investments and ensure alignment with the organization&apos;s financial goals. Their
               responsibilities focus on performance measurements, analysis, and reporting, which
               helps to inform strategic investment decisions.
             </p>

@@ -193,7 +193,7 @@ export default function CloudcastPage() {
         <div className="w-full max-w-[1344px]">
           <div className="flex flex-col gap-2 max-w-[900px]">
             <h3 className="text-[20px] leading-[28px] lg:text-[28px] font-normal text-black lg:leading-[36px]">
-              Designing for seamless viewing experience
+              Designing for a seamless viewing experience
             </h3>
             <p className="text-[18px] font-normal text-black leading-[28px]">
               AWS TV offers an intuitive experience that helps users easily find content
@@ -264,7 +264,7 @@ export default function CloudcastPage() {
         <div className="w-full max-w-[1344px]">
           <div className="flex flex-col gap-2 max-w-[900px]">
             <h3 className="text-[20px] leading-[28px] lg:text-[28px] font-normal text-black lg:leading-[36px]">
-              Designing with multitasking users in mind through responsive design.
+              Designing with multitasking users in mind through responsive design
             </h3>
             <p className="text-[18px] font-normal text-black leading-[28px]">
               AWS is intentionally designed to support how modern technologists learn across
