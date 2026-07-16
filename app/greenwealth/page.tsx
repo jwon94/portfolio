@@ -235,15 +235,15 @@ export default function GreenwealthPage() {
 
         <div className="mt-6 max-w-[900px]">
           <InsightCard
-            label="Switching Between Tools Created Workflow Friction"
+            label="Switching between tools created workflow friction"
             body="Performance managers juggled two legacy systems and Excel, each with different logic, slowing them down and increasing error risk."
           />
           <InsightCard
-            label="Full Data Visibility Was Valued"
+            label="Full data visibility was valued"
             body="Despite a cluttered UI in the legacy product, they valued seeing all available data fields for greater control and confidence."
           />
           <InsightCard
-            label="Often Duplicating Previous Reports"
+            label="Often duplicating previous reports"
             body="They often duplicated old reports and tweaked filters like date, region, etc. to save time."
           />
         </div>
@@ -411,15 +411,15 @@ export default function GreenwealthPage() {
 
         <div className="mt-6 max-w-[900px]">
           <InsightCard
-            label="High Effort, Low Impact"
+            label="High effort, low impact"
             body="The first option requires significant front-end engineering effort but offers limited user value, making it difficult to justify the level of custom development."
           />
           <InsightCard
-            label="Excel-Like Experience"
+            label="Excel-like experience"
             body="Across all options, stakeholders emphasized the importance of preserving familiar data behaviors like tabular layouts and multi-step formulas commonly found in Excel."
           />
           <InsightCard
-            label="Lack of Guidance and Unclear Layout"
+            label="Lack of guidance and unclear layout"
             body="The team raised concerns about Option 1 feeling too open-ended for new users, especially without guidance or visual grouping."
           />
         </div>
