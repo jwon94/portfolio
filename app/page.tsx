@@ -47,7 +47,7 @@ const projects: {
   {
     id: "cloudcast",
     date: "2023 July - 2023 December / Senior Product Designer",
-    title: "Designing a Video Learning Platform",
+    title: "Designing a video learning platform",
     description:
       "Built a video learning platform from 0 to 1, leading discovery, end-to-end experience design, and visual direction. The design concepts were compelling enough to secure ~$400K in product funding from AWS leadership to continue building.",
     image: "/images/cloudcast/awslanding.png",
