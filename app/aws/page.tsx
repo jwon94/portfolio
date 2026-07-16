@@ -44,7 +44,7 @@ export default function AwsPage() {
       <section className="px-12 pt-[180px] pb-12">
         <div className="flex flex-col gap-2 max-w-[900px]">
           <p className="text-[18px] font-normal text-[#a1a1a1] leading-[28px]">
-            2023 July - 2023 December / Senior Designer
+            2023 July - 2023 December / Senior Product Designer
           </p>
           <h1 className="text-[28px] leading-[36px] lg:text-[40px] font-normal text-black lg:leading-[48px]">
             Designing an immersive video learning experience for engineers
