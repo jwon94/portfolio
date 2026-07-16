@@ -239,7 +239,7 @@ export default function GreenwealthPage() {
             body="Performance managers juggled two legacy systems and Excel, each with different logic, slowing them down and increasing error risk."
           />
           <InsightCard
-            label="Full Data Visibility was Valued"
+            label="Full Data Visibility Was Valued"
             body="Despite a cluttered UI in the legacy product, they valued seeing all available data fields for greater control and confidence."
           />
           <InsightCard
@@ -285,7 +285,7 @@ export default function GreenwealthPage() {
           />
           <StrategyCard
             label="Familiarity"
-            body="Maintain the unique workflows and replicate patterns that the users were familiar with Excel to reduce the learning curve."
+            body="Maintain the unique workflows and replicate patterns that users were familiar with from Excel to reduce the learning curve."
           />
         </div>
       </section>
