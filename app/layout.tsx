@@ -20,7 +20,21 @@ const abrilFatface = Abril_Fatface({
 export const metadata: Metadata = {
   title: "Chelsea Hwang — Product Designer",
   description:
-    "Senior Product Designer at Slalom Build, bringing ideas to life from 0 to 1 for clients.",
+    "Senior Product Designer with 10 years across fintech, enterprise, and startups. Currently at Intuit TurboTax.",
+  openGraph: {
+    title: "Chelsea Hwang — Product Designer",
+    description:
+      "Senior Product Designer with 10 years across fintech, enterprise, and startups. Currently at Intuit TurboTax.",
+    url: "https://www.hichelsea.com",
+    siteName: "Chelsea Hwang",
+    type: "website",
+  },
+  twitter: {
+    card: "summary",
+    title: "Chelsea Hwang — Product Designer",
+    description:
+      "Senior Product Designer with 10 years across fintech, enterprise, and startups. Currently at Intuit TurboTax.",
+  },
 };
 
 export default function RootLayout({
