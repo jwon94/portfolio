@@ -229,7 +229,7 @@ export default function AwsPage() {
                 src="/images/cloudcast/viewing-2-v2.png"
                 alt="Full video player"
                 fill
-                className="object-contain"
+                className="object-cover"
                 sizes="50vw"
               />
             </div>
